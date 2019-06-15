@@ -1,0 +1,14 @@
+E:\Work\OrchardCMSBlog\bin\Debug\netcoreapp2.2\OrchardCMSBlog.deps.json
+E:\Work\OrchardCMSBlog\bin\Debug\netcoreapp2.2\OrchardCMSBlog.runtimeconfig.json
+E:\Work\OrchardCMSBlog\bin\Debug\netcoreapp2.2\OrchardCMSBlog.runtimeconfig.dev.json
+E:\Work\OrchardCMSBlog\bin\Debug\netcoreapp2.2\OrchardCMSBlog.dll
+E:\Work\OrchardCMSBlog\bin\Debug\netcoreapp2.2\OrchardCMSBlog.pdb
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.csprojAssemblyReference.cache
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.csproj.CoreCompileInputs.cache
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.RazorAssemblyInfo.cache
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.RazorAssemblyInfo.cs
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.AssemblyInfoInputs.cache
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.AssemblyInfo.cs
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.RazorTargetAssemblyInfo.cache
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.dll
+E:\Work\OrchardCMSBlog\obj\Debug\netcoreapp2.2\OrchardCMSBlog.pdb
