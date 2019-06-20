@@ -1,0 +1,738 @@
+2019-06-20 00:11:24.5205|Default|0HLNKSEDA3P8N:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:28:55.6596|Default|0HLNKSO55UFA5:00000007||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:28:55.7075|Default|0HLNKSO55UFA4:00000007||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:28:55.6596|Default|0HLNKSO55UFA3:00000007||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:28:55.7363|Default|0HLNKSO55UFA2:00000004||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:29:03.5755|Default|0HLNKSO55UFA2:00000005||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:29:03.6286|Default|0HLNKSO55UFA0:00000007||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:29:03.7292|Default|0HLNKSO55UFA5:00000009||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:29:03.7713|Default|0HLNKSO55UFA7:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:30:52.5485|Default|0HLNKSP9DKL41:00000003||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:30:52.5485|Default|0HLNKSP9DKL42:00000003||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:30:52.5485|Default|0HLNKSP9DKL43:00000002||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:30:52.5486|Default|0HLNKSP9DKL3V:00000002||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:50:15.2501|Default|0HLNKT43CNQ6D:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 00:53:28.7909||||Microsoft.AspNetCore.Server.Kestrel|FATAL|Unable to start Kestrel. System.IO.IOException: Failed to bind to address http://127.0.0.1:3000: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted ---> System.Net.Sockets.SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass21_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+2019-06-20 05:35:00.9568|Default|0HLNL233AL37S:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.InvalidOperationException: RenderBody has not been called for the page at '/Views/Shared/_Layout.cshtml'. To ignore call IgnoreBody().
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureRenderedBodyOrSections()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 05:38:47.4764|Default|0HLNL2584AIPT:00000002||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 05:39:52.6649|Default|0HLNL2584AIPQ:00000005||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 05:39:54.0074|Default|0HLNL2584AIPQ:00000006||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 05:39:54.2715|Default|0HLNL2584AIQ4:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 05:39:55.5527|Default|0HLNL2584AIQ5:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:10:11.1237|Default|0HLNL2MEA8D9M:00000009||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:10:11.3551|Default|0HLNL2MEA8D9M:0000000A||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:10:11.5004|Default|0HLNL2MEA8D9M:0000000B||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:10:11.8395|Default|0HLNL2MEA8D9Q:00000008||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:10:11.8395|Default|0HLNL2MEA8D9N:00000006||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:10:11.9809|Default|0HLNL2MEA8D9Q:00000009||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. System.ArgumentOutOfRangeException: The specified URL is not inside the URL scope of the file store.
+Parameter name: publicUrl
+   at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at OrchardCore.Media.Services.MediaFileStore.MapPublicUrlToPath(String publicUrl) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Services\MediaFileStore.cs:line 92
+   at OrchardCore.Media.Processing.MediaFileProvider.GetAsync(HttpContext context) in C:\projects\orchardcore\src\OrchardCore.Modules\OrchardCore.Media\Processing\MediaFileProvider.cs:line 39
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 150
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 82
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 99
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-20 06:27:12.2471|Default|0HLNL2MEA8DAM:00000001||Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|ERROR|An unhandled exception has occurred while executing the request. Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\Work\OrchardCMSBlog\Pages\Blog\Index.cshtml(23,30): error CS1579: foreach statement cannot operate on variables of type 'Task<IEnumerable<ContentItem>>' because 'Task<IEnumerable<ContentItem>>' does not contain a public instance definition for 'GetEnumerator'
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.DefaultPageLoader.Load(PageActionDescriptor actionDescriptor)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 156
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 83
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 117
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)    at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.DefaultPageLoader.Load(PageActionDescriptor actionDescriptor)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler.<>c__DisplayClass12_0.<RouteAsync>b__0(HttpContext c)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at SixLabors.ImageSharp.Web.Middleware.ImageSharpMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.Extensions.DependencyInjection.CommitSessionMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore.Data\OrchardCoreBuilderExtensions.cs:line 156
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at OrchardCore.Modules.ModularTenantRouterMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantRouterMiddleware.cs:line 83
+   at OrchardCore.Modules.ModularTenantContainerMiddleware.Invoke(HttpContext httpContext) in C:\projects\orchardcore\src\OrchardCore\OrchardCore\Modules\ModularTenantContainerMiddleware.cs:line 117
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
